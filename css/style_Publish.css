@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#FFD39B;
+}
+.div_conter{
+	position:absolute;
+	top:60px;
+	left:150px;
+	width:75%;
+	height:550px;	
+	border:solid 1px;
+	border-color:#DCDCDC;
+	background-color:#F5F5F5;
+	opacity:0.5;
+}
+#publish_img{
+	position:absolute;
+	top:150px;
+	left:300px;
+	width:250px;
+	height:220px;	
+	border:solid 1px;
+	border-color:#EEE5DE;
+	background-color:white;
+}
+#publish_img input{
+	position:absolute;
+	top:-30px;
+}
+#input_up{
+	right:0px;
+}
+#text_name{
+	left:0px;
+	width:150px;
+	height:20px;
+}
+#text_message_p{
+	position:absolute;
+	top:110px;
+	left:680px;
+	color:black;
+}
+#text_message{
+	position:absolute;
+	top:150px;
+	left:680px;
+	width:350px;
+	height:220px;	
+	border:solid 1px;
+	border-color:#EEE5DE;
+	font-size:20px;
+}
+select{
+	width:150px;
+	height:40px;
+}
+.classification{
+	position:absolute;
+	top:400px;
+	left:300px;
+}
+
+#text_price{
+	position:absolute;
+	top:400px;
+	left:600px;
+	width:150px;
+	height:30px;
+}
+.bargaining{
+	position:absolute;
+	top:400px;
+	left:880px;
+}
+.degree{
+	position:absolute;
+	top:500px;
+	left:300px;
+}
+.campus{
+	position:absolute;
+	top:500px;
+	left:600px;
+}
+#input_submit{
+	position:absolute;
+	top:500px;
+	left:880px;
+	width:150px;
+	height:40px;
+	-webkit-border-radius: 6px;
+    border: 2px solid #808080;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+	background-color:#FFD39B;
+}

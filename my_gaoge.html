@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/my_gaoge.css" />
+<script language="JavaScript" src="js/jquery-3.3.1.js"></script>
+<script language="JavaScript" src="script.js" charset="UTF-8"> </script> 
+<title>我的高阁</title>
+</head>
+
+<body>
+	
+	<div class="menu_function">
+		<ul>
+			<li><span class="active">
+            	<img src="picture/user1.jpg" width="200px" height="200px"><br/>
+            用户名称</span></li>
+            <li><a href="#div_content_geren" class="active">个人中心</a></li>
+            <li><a href="#div_content_zuji" >我的足迹</a></li>
+            <li><a href="#my_fans" >我的粉丝</a></li>
+            <li><a href="#shouc_seller" >收藏的卖家</a></li>
+            <li><a href="#shouc_goods" >收藏的物品</a></li>
+            <li><a href="#ysell_goods" >已售出物品</a></li>
+            <li><a href="#insell_goods" >售卖中的物品</a></li>
+            <li><a href="#modify_shou_goods" >修改发布信息</a></li>
+            
+		</ul>
+	</div>
+	<div class="div_content">
+    	<div id="div_content_geren">
+        	<h1>个人中心</h1>
+        	<div id="geren_message" >
+            	<img src="picture/user1.jpg"  />
+                <div class="geren_message">
+                    <p>用户名称：</p>
+                    <p>用户账号：</p>
+                    <p>用户最近一次登录：</p>
+                </div>
+            </div>
+            <div id="geren_other">
+                <div id="fans_count" class="content_geren one">
+                    粉丝数
+                    
+                </div>
+                 <div id="shouc_goods_count" class="content_geren two">
+                    收藏的物品数
+                </div>
+                <div id="shouc_person_count" class="content_geren one">
+                    收藏的卖家数
+                </div>
+                <div id="insell_count" class="content_geren two">
+                    售卖中的物品数
+                
+                </div>
+                <div id="outsell_count" class="content_geren one">
+                    已卖出的物品数
+                </div>
+               
+            </div>
+        </div>
+		<div id="div_content_zuji" class="goods_table">
+        	<h1>足迹记录</h1>
+				<table id="geren_table">
+					<tr >
+						<th scope="col">商品名称</th>	 		 	
+						<th scope="col">商品图片</th>
+						<th scope="col">商品价格</th>
+                        <th scope="col">新旧程度</th>
+                        <th scope="col">能否讲价</th>
+						<th scope="col">坐标</th>
+					</tr>
+					<tr class="td_one">
+						<td ></td>
+						<td class="td_2"></td>
+						<td ></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					
+				</table>
+		</div>
+        <div id="my_fans" class="people">
+        	<h1>我的粉丝</h1>
+        	<table id="fans_table" >
+            	<tr >
+                	<th>名称</th>
+                    <th>头像</th>
+                    <th>名称</th>
+                    <th>头像</th>
+                </tr>
+                <tr class="td_one">
+                	<td></td>
+                    <td class="td_2"></td>
+                    <td></td>
+                    <td class="td_2"></td>
+                </tr>
+                <tr >
+                	<td></td>
+                    <td class="td_2"></td>
+                    <td></td>
+                    <td class="td_2"></td>
+                </tr>
+                <tr class="td_one">
+                	<td></td>
+                    <td class="td_2"></td>
+                    <td></td>
+                    <td class="td_2"></td>
+                </tr>
+                <tr >
+                	<td></td>
+                    <td class="td_2"></td>
+                    <td></td>
+                    <td class="td_2"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="shouc_seller" class="people">
+        <h1>收藏的卖家</h1>
+        	<table id="seller_table" >
+            	<tr >
+                	<th>名称</th>
+                    <th>头像</th>
+                    <th>名称</th>
+                    <th>头像</th>
+                </tr>
+                <tr class="td_one">
+                	<td></td>
+                    <td class="td_2"></td>
+                    <td></td>
+                    <td class="td_2"></td>
+                </tr>
+                <tr >
+                	<td></td>
+                    <td class="td_2"></td>
+                    <td></td>
+                    <td class="td_2"></td>
+                </tr>
+                <tr class="td_one">
+                	<td></td>
+                    <td class="td_2"></td>
+                    <td></td>
+                    <td class="td_2"></td>
+                </tr>
+                <tr >
+                	<td></td>
+                    <td class="td_2"></td>
+                    <td></td>
+                    <td class="td_2"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="shouc_goods" class="goods_table">
+        	<h1>收藏的物品</h1>
+				<table id="shouc_goods_table" >
+					<tr >
+						<th scope="col">商品名称</th>	 		 	
+						<th scope="col">商品图片</th>
+						<th scope="col">商品价格</th>
+                        <th scope="col">新旧程度</th>
+                        <th scope="col">能否讲价</th>
+						<th scope="col">坐标</th>
+					</tr>
+					<tr class="td_one">
+						<td ></td>
+						<td class="td_2"></td>
+						<td ></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					
+				</table>
+		</div>
+         <div id="ysell_goods" class="goods_table">
+        	<h1>已售出的物品</h1>
+				<table id="ysell_goods_table" >
+					<tr >
+						<th scope="col">商品名称</th>	 		 	
+						<th scope="col">商品图片</th>
+						<th scope="col">商品价格</th>
+                        <th scope="col">新旧程度</th>
+                        <th scope="col">能否讲价</th>
+						<th scope="col">坐标</th>
+					</tr>
+					<tr class="td_one">
+						<td ></td>
+						<td class="td_2"></td>
+						<td ></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					
+				</table>
+		</div>
+        <div id="insell_goods" class="goods_table">
+        	<h1>售卖中的物品</h1>
+				<table id="insell_goods_table" >
+					<tr >
+						<th scope="col">商品名称</th>	 		 	
+						<th scope="col">商品图片</th>
+						<th scope="col">商品价格</th>
+                        <th scope="col">新旧程度</th>
+                        <th scope="col">能否讲价</th>
+						<th scope="col">坐标</th>
+					</tr>
+					<tr class="td_one">
+						<td ></td>
+						<td class="td_2"></td>
+						<td ></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					
+				</table>
+		</div>
+        <div id="modify_shou_goods" class="goods_table">
+        	<div id="modify_select">
+            	<button id="search">查询</button>
+                <input type="text" value="请输入商品名称" onclick="this.value='';focus()" style="color:#c0c0c0" id="select_input"/>
+                <button id="delete">删除</button>
+                <button id="un_Select">全不选</button>
+                <button id="all_select">全选</button>
+            </div>
+				<table id="modify_shou_goods_table" >
+					<tr >
+                    	<th scope="col">复选框</th>	
+						<th scope="col">商品名称</th>	 		 	
+						<th scope="col">商品图片</th>
+						<th scope="col">商品价格</th>
+                        <th scope="col">新旧程度</th>
+                        <th scope="col">能否讲价</th>
+						<th scope="col">坐标</th>
+					</tr>
+					<tr class="td_one">
+						<td class="td_small"><input type='checkbox' /></td>
+                        <td ></td>
+						<td class="td_2"></td>
+						<td ></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_small"><input type='checkbox' /></td>
+                        <td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_small"><input type='checkbox' /></td>
+                        <td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_two">
+						<td class="td_small"><input type='checkbox' /></td>
+                        <td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					<tr class="td_one">
+						<td class="td_small"><input type='checkbox' /></td>
+                        <td class="td_1"></td>
+						<td class="td_2"></td>
+						<td></td>
+						<td class="td_small"></td>
+                        <td class="td_small"></td>
+						<td ></td>
+					</tr>
+					
+				</table>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+	$(document).ready(function(){
+		 $('.menu_function a').click(function(){// TODO	
+		 	$($(".menu_function li a.active").attr("href")).hide();
+			$(".menu_function li a.active").removeClass("active");
+			$($(this).attr("href")).show();
+			$(this).addClass("active");
+		});
+		//全选
+		 $("#modify_shou_goods #all_select").click(function () {
+				if($("#modify_shou_goods :checkbox").attr("checked") == true){
+					$("#modify_shou_goods :checkbox").attr("checked", false);
+				}else{
+					$("#modify_shou_goods :checkbox").attr("checked", true);
+				}
+		 });
+		//全不选
+		 $("#modify_shou_goods #un_Select").click(function () {
+				$("#modify_shou_goods :checkbox").attr("checked", false);
+		 });
+		
+		//删除
+		 $("#modify_shou_goods #delete").click(function() {
+			 if( confirm("确定删除该物品信息?") ){
+				 var code="";
+					$("#modify_shou_goods input:checked").each(function() { // 遍历选中的checkbox
+						code=code+$(this).parent().next().next().text()+",";
+						n = $(this).parents("tr").index();  // 获取checkbox所在行的顺序
+						$("table#modify_shou_goods_table").find("tr:eq("+n+")").remove();
+						
+					});
+			 }
+		  });
+	});
+</script>

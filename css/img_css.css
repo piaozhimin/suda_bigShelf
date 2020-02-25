@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* CSS Document */
+.vg-body {
+	margin: 0 auto;
+}
+/*任务成长值*/
+
+.vg_title {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 10px 0;
+	color: #464646;
+}
+
+.vg_task {
+	background-color: #fff;
+	position: relative;
+	width:1100px;
+}
+
+.vg_task .arrowbtn-left,
+.vg_task .arrowbtn-right {
+	position: absolute;
+	top: 80px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.vg_task .arrowbtn-left {
+	left:0px;
+	background: url(../picture/arrow-left.jpg) no-repeat;
+}
+
+.vg_task .arrowbtn-right {
+	right:0px;
+	background: url(../picture/arrow-right.jpg) no-repeat;
+}
+
+.vg_tasklist {
+	width:1025px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.vg_tasklist ul {
+	width:300%;
+}
+
+.vg_tasklist li {
+	width: 240px;
+	height: 200px;
+	float: left;
+	border: 1px solid #c8c8c8;
+	margin: 15px 15px 15px 0;
+	position: relative;
+}
+.vg_tasklist li img {
+	float: left;
+	margin:5px 5px 20px 20px;
+}
+
+.vg_tasklist li .rightinfo {
+	width: 136px;
+	float: left;
+	text-align: center;
+}
+
+/*grid-1230*/
+
+.grid-1230 .vg-body {
+	width: 1025px;
+}
+
+.grid-1230 .vg_tasklist {
+	width: 1025px;
+}
+
+.grid-1230 .vg_tasklist li {
+	margin-right: 16px;
+}
+
+.grid-1230 .vg_task .arrowbtn-left {
+	left:0px;
+}
+
+.grid-1230 .vg_task .arrowbtn-right {
+	right: 0px;
+}
+
+.grid-1010 .vg-body {
+	width: 1025px;
+}
+
+.grid-1010 .vg_tasklist {
+	width:900px;
+}
+
+.grid-1010 .vg_tasklist li {
+	margin-right: 35px;
+}
+
+.grid-1010 .vg_task .arrowbtn-left {
+	left:0px;
+}
+
+.grid-1010 .vg_task .arrowbtn-right {
+	right:0px;
+}
+

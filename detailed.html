@@ -1,0 +1,586 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<link href="css/style_detailed.css" rel="stylesheet" type="text/css"> 
+<script language="JavaScript" src="js/jquery-3.3.1.js"></script>
+<script language="JavaScript" src="script.js" charset="UTF-8"> </script> 
+<link rel="stylesheet" href="http://static9.pplive.cn/pub/flagment/v_20150114110035/header.min.css" />			
+<!--新增样式的css，名称可根据具体需求修改-->
+<title>苏大二手物品市场</title>
+</head>
+
+<body>
+	
+	<div id="child_header">
+    	<div class="introduce">
+        	<img src="picture/logo.jpg" alt="" width="100px" height="100px" />
+            <span>苏大高阁，<br/>让你的高阁对外开放！</span>
+        </div>
+		<div class = "div_select" >		
+		    <label>
+		      <input  type="radio" id="query0" value="chu-level" checked="checked" onClick="hidden1('div_query_out','div_query_in')"/>
+		     站内查询</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		      <label>
+		      <input  type="radio" id="query1" value="zhong-level" onClick="hidden1('div_query_in','div_query_out')"/>
+		      百度查询</label>	
+		</div>
+		<div id="div_query_in">
+			<form id="in_form" action="#" class=fm onsubmit="">
+				<input type="text" id="in_query_text" class="query_text"></input>
+				<input type="submit" id="in_query_button" value="搜索" class="query_button"></input>
+			</form>
+		</div>
+		<div id="div_query_out">
+			<form id="out_form" action="http://www.baidu.com/s" class=fm onsubmit="">
+				<input type="text" id="baidu_text" class="query_text"></input>
+				<input type="submit" value="百度一下" id="baidu_button" class="query_button"></input>
+			</form>
+		</div>
+		<div class="link_img">
+			<a  href="https://www.taobao.com/" id="taobao">
+				<img src="http:////gw.alicdn.com/mt/TB1ZnvPLFXXXXa3XFXXXXXXXXXX-63-63.png"  width="30" height="30"/>
+			</a>
+			<a  href="https://www.tmall.com/" id="tianmao">
+				<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538819779365&di=4d815a532e799b6be89d8d8d551b7b33&imgtype=0&src=http%3A%2F%2Fwww.cqmeihe.com%2Fstyle%2Fimages%2Fad%2Ftm.jpg"  width="30" height="30"/>
+			</a>
+			<a  href="https://www.jd.com/" id="jingdong">
+				<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1795920787,1848264411&fm=11&gp=0.jpg"  width="30" height="30"/>
+			</a>
+		</div>
+	</div>
+    <div id="detail_menu">
+    	<div id="menu_type_detail">
+        <ul>
+		  <li><span>商品分类：</span></li>
+		  <li><a href="detailed.html">全部</a></li>
+		  <li><a href="#book">书籍类</a></li>
+		  <li><a href="#Battery_car">电瓶车类</a></li>
+		  <li><a href="#bicycle">自行车类</a></li>
+		  <li><a href="#stationery">文具类</a></li>
+		  <li><a href="#other">其它</a></li>
+		</ul>
+        </div>
+    	<div id="menu_site_detail">
+        	<ul>
+          <li><span>校区：</span></li>
+		  <li><a href="#t">天赐庄校区</a></li>
+		  <li><a href="#d">东校区</a></li>
+		  <li><a href="#b">北校区</a></li>
+		  <li><a href="#n">南校区</a></li>
+		  <li><a href="#y">阳澄湖校区</a></li>
+		  <li><a href="#d">独墅湖校区</a></li>
+		  <li><a href="#w">文正校区</a></li>
+		  <li><a href="#z">周庄校区</a></li>
+		</ul>
+        </div>
+    </div>
+    <hr class="hr_big"/>
+    <a  href="#detail_menu" id="back_top">
+		<img src="picture/back_top.jpg"  width="40" height="40"/>
+	</a>
+	<div id="piture">
+		<div class="vg-body" id="book">
+			<!--book-->
+			<div class="vg_title">
+				<p>书籍类</p>
+			</div>
+			<div class="vg_task">
+				<div class="arrowbtn-left" id="arrow-left-book"></div>
+				<div class="arrowbtn-right" id="arrow-right-book"></div>
+				<div class="vg_tasklist" id="id="vg_tasklist-book"">
+					<ul class="cf" id="switchPic-book">
+										<li>
+							<img src="picture/book_0.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">神经病理学 &nbsp;12元&nbsp;独墅湖校区</p>
+							</div>		
+						</li>
+						<li>
+							<img src="picture/book_1.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">童年,我的大学,在人间三件套&nbsp;50元&nbsp;天赐庄校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/book_2.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">大学生创新创业教程&nbsp;12元&nbsp;独墅湖校区</p>
+							</div>	
+                        </li>
+						<li>
+							<img src="picture/book_3.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">福尔摩斯探案集&nbsp;30元&nbsp;东校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/book_4.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">马克思主义基本原理&nbsp;10元&nbsp;文正校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/book_5.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">人工智能 &nbsp;20元&nbsp;独墅湖校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/book_6.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">高级日语&nbsp;12元&nbsp;周庄校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/book_7.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">王爷要休妃 &nbsp;40元&nbsp;独墅湖校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/book_8.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">大学英语语法&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+                        <li><img src="picture/book_9.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">大学计算机基础&nbsp;10元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_10.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">浮生物语&nbsp;20元&nbsp;北校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_11.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">聊斋志异&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_12.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">红楼梦&nbsp;25元&nbsp;南校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_13.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">数据结构（c语言版）&nbsp;10元&nbsp;阳澄湖校区</p>
+							</div>	
+                         </li>
+                        <li><img src="picture/book_14.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">扑克牌杀人&nbsp;20元&nbsp;独墅湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_15.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">摆渡人&nbsp;20元&nbsp;文正校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_16.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">白鹿原&nbsp;15元&nbsp;周庄校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_17.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">保险投资学&nbsp;10元&nbsp;天赐庄校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_18.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">哈弗家训&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_19.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">且试天下&nbsp;20元&nbsp;北校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_20.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">半醒&nbsp;15元&nbsp;独墅湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_21.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">儒林外史&nbsp;30元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_22.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">设计心理学&nbsp;20元&nbsp;东校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/book_23.jpg">
+                        	<div class="task_hover">
+								<p class="task_desc">外国小说集（6本）&nbsp;120元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+					</ul>
+				</div>
+			</div>>
+		</div>
+       
+        <div class="vg-body" id="Battery_car">
+			<!--电瓶车-->
+			<div class="vg_title" >
+				<p>电瓶车类</p>
+			</div>
+			<div class="vg_task">
+				<div class="arrowbtn-left" id="arrow-left-Battery_car"></div>
+				<div class="arrowbtn-right" id="arrow-rigth-Battery_car"></div>
+				<div class="vg_tasklist">
+					<ul class="cf" id="switchPic-Battery_car">
+						<li>
+							<img src="picture/Battery_car_0.jpg">	
+                             <div class="task_hover">
+								<p class="task_desc">9成新&nbsp;1500元&nbsp;阳澄湖校区</p>
+							</div>		
+						</li>
+						<li>
+							<img src="picture/Battery_car_1.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">7成新&nbsp;1000元&nbsp;天赐庄校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/Battery_car_2.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">5成新&nbsp;600元&nbsp;东校区</p>
+							</div>	
+                        </li>
+						<li>
+							<img src="picture/Battery_car_3.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">9成新&nbsp;800元&nbsp;周庄校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/Battery_car_4.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">9成新&nbsp;1800元&nbsp;文正校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/Battery_car_5.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">5成新&nbsp;600元&nbsp;独墅湖校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/Battery_car_6.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">5成新&nbsp;500元&nbsp;北校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/Battery_car_7.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;1000元&nbsp;南校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/Battery_car_8.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">9成新&nbsp;1200元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+					</ul>
+				</div>
+			</div>>
+		</div>
+        
+        <div class="vg-body" id="bicycle">
+			<!--自行车-->
+			<div class="vg_title" >
+				<p>自行车类</p>
+			</div>
+			<div class="vg_task">
+				<div class="arrowbtn-left"></div>
+				<div class="arrowbtn-right"></div>
+				<div class="vg_tasklist">
+					<ul class="cf" id="switchPic">
+						<li>
+							<img src="picture/bicycle_0.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">9成新&nbsp;200元&nbsp;阳澄湖校区</p>
+							</div>			
+						</li>
+						<li>
+							<img src="picture/bicycle_1.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;180元&nbsp;周庄校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/bicycle_2.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">5成新&nbsp;100元&nbsp;文正校区</p>
+							</div>	
+                        </li>
+						<li>
+							<img src="picture/bicycle_3.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">5成新&nbsp;50元&nbsp;东校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/bicycle_4.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;150元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/bicycle_5.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">7成新&nbsp;120元&nbsp;北校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/bicycle_6.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">6成新&nbsp;100元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/bicycle_7.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">9成新&nbsp;250元&nbsp;独墅湖校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/bicycle_8.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;200元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+					</ul>
+				</div>
+			</div>>
+		</div>
+        <div class="vg-body" id="stationery">
+			<!--文具类-->
+			<div class="vg_title" >
+				<p>文具类</p>
+			</div>
+			<div class="vg_task">
+				<div class="arrowbtn-left"></div>
+				<div class="arrowbtn-right"></div>
+				<div class="vg_tasklist">
+					<ul class="cf" id="switchPic">
+						<li>
+							<img src="picture/stationery_0.jpg">	
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>		
+						</li>
+						<li>
+							<img src="picture/stationery_1.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/stationery_2.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+						<li>
+							<img src="picture/stationery_3.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/stationery_4.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/stationery_5.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/stationery_6.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/stationery_7.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/stationery_8.jpg">
+                             <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+                        <li><img src="picture/stationery_9.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_10.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_11.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_12.jpg">
+                       		 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	 
+                       </li>
+                        <li><img src="picture/stationery_13.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_14.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_15.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_16.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_17.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_18.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_19.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_20.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_21.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_22.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+                        <li><img src="picture/stationery_23.jpg">
+                        	 <div class="task_hover">
+								<p class="task_desc">8成新&nbsp;20元&nbsp;阳澄湖校区</p>
+							</div>	
+                        </li>
+					</ul>
+				</div>
+			</div>>
+		</div>
+        <div class="vg-body" id="other">
+			<!--其它-->
+			<div class="vg_title" >
+				<p>其它</p>
+			</div>
+			<div class="vg_task">
+				<div class="arrowbtn-left"></div>
+				<div class="arrowbtn-right"></div>
+				<div class="vg_tasklist">
+					<ul class="cf" id="switchPic">
+						<li>
+							<img src="picture/other_0.jpg">	
+                            <div class="task_hover">
+								<p class="task_desc">防弹专辑&nbsp;100元&nbsp;独墅湖校区</p>
+							</div>		
+						</li>
+						<li>
+							<img src="picture/other_1.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">剪刀&nbsp;5元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/other_2.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">地球仪&nbsp;20元&nbsp;天赐庄校区</p>
+							</div>	
+                        </li>
+						<li>
+							<img src="picture/other_3.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">玩偶熊&nbsp;30元&nbsp;东校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/other_4.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">闹钟&nbsp;10元&nbsp;北校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/other_5.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">鼠标&nbsp;15元&nbsp;文正校区</p>
+							</div>	
+						</li>
+						<li>
+							<img src="picture/other_6.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">防弹少年团专辑（花样年华2）&nbsp;100元&nbsp;独墅湖校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/other_7.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">固体水彩&nbsp;50元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/other_8.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">蚊烟香&nbsp;5元&nbsp;阳澄湖校区</p>
+							</div>	
+						</li>
+                        <li>
+							<img src="picture/other_9.jpg">
+                            <div class="task_hover">
+								<p class="task_desc">防弹少年团专辑（承her）&nbsp;150元&nbsp;独墅湖校区</p>
+							</div>	
+						</li>
+					</ul>
+				</div>
+			</div>>
+		</div>
+        </div>
+</body>
+
+ 
+</html>

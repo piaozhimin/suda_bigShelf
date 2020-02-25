@@ -1,0 +1,243 @@
+@CHARSET "UTF-8";
+body{
+	background-color:#FFDEAD;
+}
+#my_fans,#div_content_zuji,#shouc_goods,#shouc_seller,#ysell_goods,#insell_goods,#modify_shou_goods{
+	display:none;
+}
+
+table{
+	text-align: center;
+	border:solid 1px;
+	border-color:#c0c0c0;
+	border-radius:10px;
+}
+tr{
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+th{	
+	height:50px;
+	background-color:#FFDEAD;
+}
+
+.menu{
+	position:absolute;
+	top:10%;
+	left:35%;
+}
+.menu a{
+	margin:30px;
+	font-size:25px;
+}
+.td_one td{
+	background-color:#f4f4f4;
+}
+.td_two td{
+	background-color:#ffffff;
+}
+
+
+.menu_function ul {
+    position:absolute;
+    top:70px;
+    left:5%;
+    width: 20%;
+    background-color: #ffffff;
+    overflow: auto;
+	height: 850px; 
+	font-size:20px;
+	text-align: center;
+	border:solid 1px;
+	border-color:#c0c0c0;
+	list-style-type: none;
+	
+}
+.menu_function ul li span{
+	height:250px;
+	display: block;
+    text-decoration: none;
+    font-size:30px;
+    border-bottom:solid 1px;
+	padding:5px;
+	color: #5555ff;
+	font-weight:bold;
+}
+.menu_function li a {
+	display: block;
+	color: #000;
+    padding:10px;
+    text-decoration: none;
+	
+}
+.menu_function li a:hover:not(.active){
+	background-color:#FFA07A;
+    color: #ffffff;
+}
+.menu_function li a.active {
+    background-color:#FFA07A;
+    color: #ffffff;
+	font-weight:bold;
+    
+}
+.div_content{
+	position:absolute;
+    top:70px;
+    left:25.2%;
+    margin: 0;
+    padding: 0;
+    width: 68%;
+    background-color: #ffffff;
+	height: 850px; 
+	font-size:20px;
+	border:solid 1px;
+	border-color:#c0c0c0;
+}
+/*足迹*/
+.goods_table table{
+	position:absolute;
+    top:150px;
+	left:40px;
+}
+.goods_table td{
+	width:150px;	
+	height:120px;
+	
+}
+.goods_table tr .td_2{
+	width:200px;
+}
+.goods_table tr .td_small{
+	width:50px;
+}
+/*个人中心图标*/
+#div_content_geren #geren_message img{
+	width:150px;
+	height:150px;
+	position:absolute;
+    top:180px;
+    left:150px;
+}
+#div_content_geren .geren_message{
+	position:relative;
+	top:30px;
+	left:450px;
+}
+#div_content_geren #geren_other{
+	position:relative;
+	top:120px;
+}
+#div_content_geren .content_geren{
+	text-align:center;
+	width:200px;
+	height:80px;
+	background-color:#FFFACD;
+	border:solid 1px;
+	border-color:#c0c0c0;
+	margin:-10px;
+	border-radius:10px;
+}
+#div_content_geren .one{
+	position:relative;
+	left:150px;
+}
+#div_content_geren .two{
+	position:relative;
+	left:550px;
+}
+/*我的粉丝、收藏的卖家*/
+.people table{
+	position:absolute;
+    top:150px;
+	left:100px;
+}
+.people td{
+	width:150px;	
+	height:150px;
+	
+}
+.people tr .td_2{
+	width:200px;
+}
+
+/*修改发布信息*/
+#modify_select{
+	position:absolute;
+	top:50px;
+	right:50px;
+}
+
+#modify_shou_goods button{
+        width: 78px;
+        height: 40px;
+        float: right;
+        background: #b9b9ff;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+        margin-right:30px;
+}
+#modify_shou_goods #select_input{
+	width: 200px;
+    border: 1px solid #e2e2e2;
+    height: 40px;
+    float: right;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position:5px center;
+    padding:0 0 0 40px;
+	background-image: url();
+}
+#modify_shou_goods_table{
+	position:absolute;
+    top:150px;
+	left:10px;
+}
+/*文字3D特效*/
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  color: #EEE;
+  animation: rotate 2s ease-in-out alternate infinite;
+}
+h1:before {
+  content: attr(data-shadow);
+  color: transparent;
+  text-shadow: 0 0 15px #111;
+  position: absolute;
+  z-index: -1;
+  margin: -0.1em 0 0 0;
+  animation: skew 2s ease-in-out alternate infinite;
+  transform-origin: bottom;
+}
+@keyframes rotate {
+  from {
+    transform: rotateY(-10deg);
+    text-shadow:  1px -1px #CCC,
+                  2px -1px #BBB,
+                  3px -2px #AAA,
+                  4px -2px #999,
+                  5px -3px #888,
+                  6px -3px #777;
+  }
+  to {
+    transform: rotateY(10deg);
+    text-shadow:  -1px -1px #CCC,
+                  -2px -1px #BBB,
+                  -3px -2px #AAA,
+                  -4px -2px #999,
+                  -5px -3px #888,
+                  -6px -3px #777;
+  }
+}
+@keyframes skew {
+  from {
+    transform: scaleY(0.3) skewX(-15deg);
+  }
+  to {
+    transform: scaleY(0.3) skewX(-20deg);
+  }
+}

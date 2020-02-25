@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style_Publish.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script language="JavaScript" src="js/jquery-3.3.1.js"></script>
+<script language="JavaScript" src="script.js" charset="UTF-8"> </script> 
+<title>Publish information</title>
+</head>
+
+<body>
+	<form  action="#" method="POST" >
+	
+    <div class="div_conter">
+    	
+    </div>
+    <div id="publish_img">
+    	<input type="text" value="请输入物品的名称" onclick="this.value=''" id="text_name"/>
+    	<input  type="button" value="点我上传图片" id="input_up"/>
+        <img src="picture/stationery_11.jpg" width="250" height="220px">
+            
+     </div>
+     <p id="text_message_p">输入物品描述信息：</p>
+     <textarea rows="10" cols="10" id="text_message">
+						
+	 </textarea>
+     <select id="classification" class="classification">
+     		<option >物品类型</option>
+	  		<option value="book">书籍</option>
+        	<option value="Battery_car">电瓶车</option>
+	  		<option value="bicycle">自行车</option>
+	  		<option value="stationery">文具</option>
+            <option value="other">其它</option>
+    </select>
+    <input type="text" value="请输入物品的价格" onclick="this.value=''" id="text_price"/>
+    <select class="bargaining">
+     		<option >是否允许讲价</option>
+	  		<option value="yes">允许</option>
+            <option value="no">不允许</option>
+     </select>
+      <select id="degree" class="degree">
+     		<option >物品新旧程度</option>
+	  		<option value=0.9>9成新</option>
+        	<option value=0.8>8成新</option>
+	  		<option value=0.7>7成新</option>
+	  		<option value=0.6>6成新</option>
+            <option value=0.5>5成新</option>
+            <option value=0.4>4成新</option>
+        	<option value=0.3>3成新</option>
+	  		<option value=0.2>2成新</option>
+	  		<option value=0.1>1成新</option>
+    </select>
+    <select id="campus" class="campus">
+     		<option >请选择校区</option>  		
+        	<option value=1>东区</option>
+	  		<option value=2>北区</option>
+	  		<option value=3>南区</option>
+            <option value=4>文正</option>
+            <option value=5>周庄</option>
+            <option value=6>阳澄湖</option>
+            <option value=7>独墅湖</option>
+	  		<option value=8>天赐庄</option>
+    </select>
+    <input type="submit" value="提交" id="input_submit"/>
+    </form>
+</body>
+</html>

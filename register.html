@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="css/register_style.css" rel="stylesheet" type="text/css"> 
+
+<title>register</title>
+</head>
+<body>
+<div id="content">
+	<h1>用户注册</h1>
+	<form action="#"  onsubmit="">
+		<div class="messages">
+			<p id="p1">用户名(学号)：</p>
+			<input type="text" id="usename" ></input>
+			<br/><br/>
+			<p id="p2">输入密码：</p>
+			<input type="password"  id="password" class="password"/>
+			<br/><br/>
+			<p id="p3">再次输入密码：</p>
+			<input type="password"  id="password2" class="password"/>
+			<br/><br/>
+			<p id="p4">验证码：</p>
+			<input type="text" id="in_query_text" ></input>
+		</div>
+		<br/>
+		<div class="sub_text">
+			<input type="submit" id="submit" value="注册" >
+			<br/>
+		    <input  type="button" onClick="location='login.html'" value="已有账号？去登录~"><br/>
+            <input  type="button" onClick="location='main.html'" value="回主页~">
+		</div>
+	</form>
+</div>
+</body>
+</html>

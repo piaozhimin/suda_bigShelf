@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+#detail_menu{
+	position:relative;
+	top:130px;
+	left:25%;
+	height:50px;
+	font-size:15px;
+}
+#detail_menu ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow: auto;
+}
+#detail_menu li
+{
+display:inline;
+
+}
+#detail_menu li a{
+	color: #808080;
+    text-decoration: none;
+    border-right: 1px solid #555;
+	padding:5px;
+}
+
+#detail_menu li a:hover:not(.active) {
+    background-color: #F90;
+    color: #000000;
+}
+#back_top{
+	position:fixed;
+	top:550px;
+	right:10px;
+	z-index:999;
+}
+.vg-body {
+	margin: 0 auto;
+	position:relative;
+	top:-40px;
+}
+/*图片展示*/
+
+.vg_title {
+	font-size: 24px;
+	line-height: 24px;
+	padding: 10px 0;
+	color: #464646;
+}
+
+.vg_task {
+	background-color: #fff;
+	position: relative;
+}
+
+.vg_tasklist {
+	width:1200px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.vg_tasklist li {
+	width: 240px;
+	height: 200px;
+	float: left;
+	border: 1px solid #c8c8c8;
+	margin: 15px 53px 15px 0;
+	position: relative;
+}
+.vg_tasklist li img {
+	float: left;
+	margin:5px 5px 20px 20px;
+}
+
+.vg_tasklist li .rightinfo {
+	width: 136px;
+	float: left;
+	text-align: center;
+}
+
+#piture{
+	position: relative;
+	top: 180px;
+	left:30px;
+}
+.vg-body img{
+	width:200px;
+	height:190px;
+}
+/*book*/
+#book{
+	position: relative;
+}
+/*Battery_car*/
+#Battery_car{
+	position: relative;
+}
+/*bicycle*/
+#bicycle{
+	position:relative;
+}
+/*stationery*/
+#stationery{
+	position:relative;
+}
+/*other*/
+#other{
+	position:relative;
+}
+footer{
+	position: relative;
+	top: 200px;
+	background-color: #f0f0f0;
+	width:100%;
+	height:30px;
+}

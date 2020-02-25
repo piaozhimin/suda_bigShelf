@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="css/style.css" rel="stylesheet" type="text/css"> 
+<script language="JavaScript" src="js/jquery-3.3.1.js"></script>
+<script language="JavaScript" src="script.js" charset="UTF-8"> </script> 
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<link rel="stylesheet" href="http://static9.pplive.cn/pub/flagment/v_20150114110035/header.min.css" />
+<!--新增样式的css，名称可根据具体需求修改-->
+<title>苏大二手物品市场</title>
+</head>
+<style>
+	#bg_img_about{
+		position:absolute;
+		top:35px;
+		left:350px;
+	}
+	.shuoming{
+		position:absolute;
+		top:200px;
+		left:530px;
+		width:300px;
+		height:300px;
+		font-size:24px;
+	}
+	#dituContent{
+		position:absolute;
+		top:700px;
+		width:697px;
+		height:550px;
+		margin-left:300px;
+	}
+	.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+
+<body >
+	
+	<img src="picture/about.jpg" id="bg_img_about"/>
+	<div class="shuoming" id="sm">
+        <p>苏大高阁，<br/>
+            为苏大学生提供出售二手物品的交易平台。<br/>
+            将你的高阁对外开放，<br/>
+            让你束之高阁的物品，<br/>
+            不再“孤单”！<br />
+            欢迎联系我们：QQ（120058446）
+            <a href="mailto:120058446@qq.com&body=You%20are%20invited%20to%20a%20Birthday%20party!" target="_top">
+ 				<B>发送邮件</B>
+            </a>
+        </p>
+    </div>
+     <script type="text/javascript">
+		initMap();
+	 </script> 
+     <div id="dituContent" ></div>
+    
+</body>
+
+</html>
